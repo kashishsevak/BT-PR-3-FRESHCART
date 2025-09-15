@@ -1,0 +1,132 @@
+.btn-success {
+    background-color: #0aad0a;
+    border: 1px solid #0aad0a;
+}
+
+/* header section start  */
+.btn:focus {
+    border: none !important;
+}
+
+.dropdown-toggle:hover {
+    color: #0aad0a;
+}
+
+.dropdown-toggle::after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.dropdown-menu li,
+.dropdown-toggle {
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f3f2;
+}
+
+.dropdown-menu li:hover a {
+    color: #262626 !important;
+}
+
+.header .form-control:focus {
+    border-color: #85d685;
+    box-shadow: 0 0 0 .25rem rgba(10, 173, 10, .25);
+}
+
+.select-area .modal-body ul li:hover {
+    background-color: #f0f3f2;
+}
+
+/* header section end  */
+
+/* hero section start  */
+.hero-slide-1 {
+    height: 500px;
+    background-image: url(../images/hero-slide-1.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-slide-2 {
+    height: 500px;
+    background-image: url(../images/hero-slide-2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+}
+
+/* hero section end  */
+
+
+/* categories section start */
+.categories-content .card {
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.categories-content .card:hover,
+.popular-product .card:hover,
+.daily-sells-content .card:hover {
+    border: 1px solid #0aad0a;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .12);
+}
+
+/* categories section end */
+
+/* product section start */
+.popular-product .product-info a,.daily-sells-content .product-info a{
+    color: #21313c;
+    transition: all 0.3s ease-in-out;
+}
+
+.popular-product .product-info a:hover, .daily-sells-content .product-info a:hover{
+    color: #0aad0a;
+}
+
+.popular-product .card,.daily-sells-content .card {
+    transition: all 0.3s ease-in-out;
+}
+
+.popular-product .icon a,.daily-sells-content .icon a {
+    font-size: 12px;
+    transition: all .3s ease 0s;
+    box-shadow: 0 2px 4px -1px rgba(145, 158, 171, .2), 0 4px 5px 0 rgba(145, 158, 171, .14), 0 1px 10px 0 rgba(145, 158, 171, .12);
+}
+
+.popular-product .icon a:hover,.daily-sells-content .icon a:hover {
+    background-color: #0aad0a;
+    color: #fff;
+}
+
+.popular-product .icon,.daily-sells-content .icon {
+    display: none;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.popular-product .card:hover .icon,.daily-sells-content .card:hover .icon {
+    display: flex;
+}
+
+/* product section end */
+
+/* daily-sells section start */
+.daily-sells-content .organic-product {
+    background-image: url(../images/banner-deal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 470px;
+}
+
+/* daily-sells section end  */
