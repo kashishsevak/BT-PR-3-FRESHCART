@@ -8,7 +8,7 @@
     border: none !important;
 }
 
-.dropdown-toggle:hover {
+.dropdown-toggle:hover,.bi-text-indent-left {
     color: #0aad0a;
 }
 
@@ -42,6 +42,10 @@
     background-color: #f0f3f2;
 }
 
+.nav li a i{
+    font-size: 12px;
+    color: #262626;
+}
 /* header section end  */
 
 /* hero section start  */
@@ -130,3 +134,31 @@
 }
 
 /* daily-sells section end  */
+
+/* footer section start */
+footer .footer-content a,.copy-right p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #687881;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .footer-content a:hover,.copy-right p a{
+    color: #0aad0a;
+}
+
+.payment-partners img{
+    width: 50px;
+}
+
+.copy-right button{
+    color: #687881;
+    border: 1px solid #687881;
+    transition: all 0.3s ease-in-out;
+}
+
+.copy-right button:hover{
+    color: #0aad0a;
+    border: 1px solid #0aad0a;
+}
+/* footer section end */
