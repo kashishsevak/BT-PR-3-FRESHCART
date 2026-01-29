@@ -1,164 +1,95 @@
-.btn-success {
-    background-color: #0aad0a;
-    border: 1px solid #0aad0a;
-}
-
-/* header section start  */
-.btn:focus {
-    border: none !important;
-}
-
-.dropdown-toggle:hover,.bi-text-indent-left {
-    color: #0aad0a;
-}
-
-.dropdown-toggle::after {
-    content: '\f107';
-    font-family: 'FontAwesome';
-    font-size: 12px;
-    border: 0;
-    vertical-align: middle;
-}
-
-.dropdown-menu li,
-.dropdown-toggle {
-    transition: all 0.3s ease-in-out;
-}
-
-.dropdown-menu li:hover {
-    background-color: #f0f3f2;
-}
-
-.dropdown-menu li:hover a {
-    color: #262626 !important;
-}
-
-.header .form-control:focus {
-    border-color: #85d685;
-    box-shadow: 0 0 0 .25rem rgba(10, 173, 10, .25);
-}
-
-.select-area .modal-body ul li:hover {
-    background-color: #f0f3f2;
-}
-
-.nav li a i{
-    font-size: 12px;
-    color: #262626;
-}
-/* header section end  */
-
 /* hero section start  */
-.hero-slide-1 {
-    height: 500px;
-    background-image: url(../images/hero-slide-1.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
+.typing {
+  width: fit-content;
 }
 
-.hero-slide-2 {
-    height: 500px;
-    background-image: url(../images/hero-slide-2.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
+.typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 80%;
+  color: black;
+  background: #fff;
+  animation: typing 8s steps(18) infinite;
 }
 
-.carousel-indicators [data-bs-target] {
-    width: 8px;
-    height: 8px;
+@keyframes typing {
+  from {
+    width: 18ch;
+  }
+
+  to {
+    width: 0ch;
+  }
 }
 
-/* hero section end  */
-
-
-/* categories section start */
-.categories-content .card {
-    padding: 15px 0;
-    transition: all 0.3s ease-in-out;
+.banner-img {
+  border-radius: 50% 50% 0% 50%;
+  border: 15px solid #292929 !important;
+  position: relative;
+  z-index: 99;
+  overflow: hidden;
 }
 
-.categories-content .card:hover,
-.popular-product .card:hover,
-.daily-sells-content .card:hover {
-    border: 1px solid #0aad0a;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, .12);
+.banner::before {
+  content: '';
+  background-image: url(../images/dots.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  right: 0;
+  bottom: 0;
+  animation: spin 50s infinite;
 }
 
-/* categories section end */
+@keyframes spin {
+  form {
+    transform: rotate(0deg);
+  }
 
-/* product section start */
-.popular-product .product-info a,.daily-sells-content .product-info a{
-    color: #21313c;
-    transition: all 0.3s ease-in-out;
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.popular-product .product-info a:hover, .daily-sells-content .product-info a:hover{
-    color: #0aad0a;
+.banner::after {
+  content: '';
+  background: #fff;
+  border: 16px solid #ea4020;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  border-radius: 350px;
 }
 
-.popular-product .card,.daily-sells-content .card {
-    transition: all 0.3s ease-in-out;
+/* hero section end */
+
+
+/* about-us section start */
+.testimonials .carousel-indicators [data-bs-target]
+{
+  background-color: #ea4020;
+  width: 12px;
+  height: 12px;
+  transform: translate(0,50px);
+}
+/* about-us section end*/
+
+/* topBtn */
+#btnTop .btn{
+  color: #ea4020;
 }
 
-.popular-product .icon a,.daily-sells-content .icon a {
-    font-size: 12px;
-    transition: all .3s ease 0s;
-    box-shadow: 0 2px 4px -1px rgba(145, 158, 171, .2), 0 4px 5px 0 rgba(145, 158, 171, .14), 0 1px 10px 0 rgba(145, 158, 171, .12);
+#btnTop .btn{
+  border: 1px solid #ea4020;
 }
 
-.popular-product .icon a:hover,.daily-sells-content .icon a:hover {
-    background-color: #0aad0a;
-    color: #fff;
+#btnTop .btn:hover{
+  background-color: #ea4020;
+  color: #fff;
 }
-
-.popular-product .icon,.daily-sells-content .icon {
-    display: none;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-.popular-product .card:hover .icon,.daily-sells-content .card:hover .icon {
-    display: flex;
-}
-
-/* product section end */
-
-/* daily-sells section start */
-.daily-sells-content .organic-product {
-    background-image: url(../images/banner-deal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 470px;
-}
-
-/* daily-sells section end  */
-
-/* footer section start */
-footer .footer-content a,.copy-right p{
-    font-size: 14px;
-    font-weight: 500;
-    color: #687881;
-    transition: all 0.3s ease-in-out;
-}
-
-footer .footer-content a:hover,.copy-right p a{
-    color: #0aad0a;
-}
-
-.payment-partners img{
-    width: 50px;
-}
-
-.copy-right button{
-    color: #687881;
-    border: 1px solid #687881;
-    transition: all 0.3s ease-in-out;
-}
-
-.copy-right button:hover{
-    color: #0aad0a;
-    border: 1px solid #0aad0a;
-}
-/* footer section end */
