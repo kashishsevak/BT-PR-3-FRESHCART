@@ -1,6 +1,8 @@
-/* lg  */
-@media(min-width:992px) {
-    .introduction {
-        transform: translateY(120px);
+/* xl  */
+@media(min-width:1200px) {
+    .col {
+        flex: 0 0 auto;
+        width: 20% !important;
+        padding: 0 10px;
     }
 }
