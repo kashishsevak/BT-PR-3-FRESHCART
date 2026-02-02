@@ -115,7 +115,7 @@
                                     placeholder="Search for products">
                                 <span class="position-relative">
                                     <button
-                                        class="border border-start-0  border-end-0 rounded-end rounded-start-0 btn btn-white position-absolute end-50"
+                                        class="border border-start-0  border-end-0 rounded-end rounded-start-0 btn btn-white position-absolute z-0 end-50"
                                         type="button">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </button>
@@ -1659,6 +1659,51 @@
     </footer>
     <!-- footer section end  -->
 
+    <!-- model -->
+    <div class="wrapper position-fixed" style="display: none;">
+        <div class="loading">
+            <div class="modal" id="sign-in" style="display: block;">
+                <div class="modal-dialog">
+                    <div class="modal-content p-4">
+                        <div class="modal-header border-0 p-0">
+                            <h5>Sign Up</h5>
+                            <button type="button" class="btn-close" onclick="handleClose()" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <label class="form-label fw-medium text-dark-emphasis"
+                                    for="name">Name</label>
+                                <input type="text" name="name" id="name" class="form-control"
+                                    placeholder="Enter Tour Name">
+                                <label class="form-label mt-4 fw-medium text-dark-emphasis"
+                                    for="email">Email Address</label>
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="Enter Email Address">
+                                <label class="form-label mt-4 fw-medium text-dark-emphasis"
+                                    for="password">Password</label>
+                                <input type="password" name="password" id="password"
+                                    class="form-control" placeholder="Enter Password">
+                            </form>
+                            <p class="fw-medium text-secondary" style="font-size: 14px;">By
+                                Signup, you agree to our <a
+                                    class="text-decoration-none text-success opacity-75"
+                                    href="javascript:void(0)">Terms of Service</a> & <a
+                                    class="text-decoration-none text-success opacity-75"
+                                    href="javascript:void(0)">Privacy Policy</a></p>
+                            <button type="button" class="btn btn-success px-3"
+                                style="background-color: #0aad0a;">Sign Up</button>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-center">
+                            <p>Already have an account? <a
+                                    class="text-decoration-none text-success opacity-75"
+                                    href="javascript:void(0)">Sign in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -1667,6 +1712,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
